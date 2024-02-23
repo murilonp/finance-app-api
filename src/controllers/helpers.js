@@ -13,6 +13,11 @@ export const badRequest = (body) => ({
   body,
 });
 
+export const notFound = (body) => ({
+  statusCode: 404,
+  body,
+});
+
 export const serverError = () => ({
   statusCode: 500,
   body: {
